@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.card {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: #222;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card span {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #333;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ARRAY */
+
+.data {
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* LINKED LIST */
+
+.linked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.node {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-weight: bold;
+    background: white;
+}
+
+.arrow {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* STACK */
+
+.stack {
+    width: 300px;
+    margin: 30px auto;
+}
+
+.stack-item {
+    padding: 18px;
+    margin-bottom: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info {
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 700px) {
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+}
